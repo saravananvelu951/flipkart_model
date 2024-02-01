@@ -150,3 +150,9 @@ from .serializers import RegistrationSerializer
 class registrationViewSet(viewsets.ModelViewSet):
     queryset = Registration.objects.all()
     serializer_class = RegistrationSerializer 
+
+def contact(request):
+    
+    return render(request,'cont.html')
+
+
